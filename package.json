@@ -1,0 +1,26 @@
+{
+	"name": "WebSocket Echo Test",
+	"description": "Back.",
+	"version": "0.0.1",
+	"homepage": "https://github.com/tomphttp",
+	"bugs": {
+		"url": "https://github.com/tomphttp/toomanyproxies-frontend/issues",
+		"email": "tomp@sys32.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tomphttp/toomanyproxies-frontend.git"
+	},
+	"author": {
+		"name": "TOMP Development",
+		"email": "tomp@sys32.dev",
+		"url": "https://github.com/tomphttp"
+	},
+	"license": "GPL-3.0",
+	"type": "module",
+	"main": "index.mjs",
+	"dependencies": {
+		"fastify": "^3.27.0",
+		"fastify-websocket": "^4.0.0"
+	}
+}

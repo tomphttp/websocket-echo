@@ -1,3 +1,16 @@
+import { Command, Option } from 'commander';
+
+const program = new Command();
+
+program
+.addOption(new Option('--h, --host <string>', 'Listening host').default('localhost'))
+.addOption(new Option('--p, --port <number>', 'Listening port').default(80).env('PORT'))
+;
+
+program.parse(process.argv);
+
+const options = program.opts();
+
 import Fastify from 'fastify';
 import FastifyWebSocket from 'fastify-websocket';
 
@@ -52,11 +65,11 @@ socket.addEventListener('message', event => {
 });
 
 
-server.listen(81, (err, url) => {
-	if(err){
-		console.error(err);
-		process.exit(-1);
-	}else{
-		console.log(`Listening on ${url}`);
+server.listen(options.port, options.host, (error, url) => {
+	if(error){
+		console.error(error);
+		process.exit(1);
 	}
+	
+	console.log('Server listening. View live at', url);
 });

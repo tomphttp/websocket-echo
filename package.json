@@ -18,8 +18,8 @@
 	},
 	"license": "GPL-3.0",
 	"type": "module",
-	"main": "index.mjs",
 	"dependencies": {
+		"commander": "^9.0.0",
 		"fastify": "^3.27.0",
 		"fastify-websocket": "^4.0.0"
 	}

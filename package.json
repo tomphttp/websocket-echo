@@ -1,6 +1,6 @@
 {
-	"name": "WebSocket Echo Test",
-	"description": "Back.",
+	"name": "websocket-echo-test",
+	"description": "WebSocket Echo Test",
 	"version": "0.0.1",
 	"homepage": "https://github.com/tomphttp",
 	"bugs": {

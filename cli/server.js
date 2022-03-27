@@ -32,7 +32,11 @@ socket.addEventListener('message', event => {
 </html>`;
 
 export default function server({ port, host }){
-	const server = new Fastify();
+	const server = new Fastify({
+		logger: {
+			level: 'error',
+		}
+	});
 
 	server.register(FastifyWebSocket);
 	

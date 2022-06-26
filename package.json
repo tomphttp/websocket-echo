@@ -1,26 +1,38 @@
 {
-	"name": "websocket-echo-test",
-	"description": "WebSocket Echo Test",
-	"version": "0.0.1",
-	"homepage": "https://github.com/tomphttp",
-	"bugs": {
-		"url": "https://github.com/tomphttp/websocket-echo/issues",
-		"email": "tomp@sys32.dev"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/tomphttp/websocket-echo.git"
-	},
-	"author": {
-		"name": "TOMP Development",
-		"email": "tomp@sys32.dev",
-		"url": "https://github.com/tomphttp"
-	},
-	"license": "GPL-3.0",
-	"type": "module",
-	"dependencies": {
-		"commander": "^9.0.0",
-		"fastify": "^3.27.0",
-		"fastify-websocket": "^4.0.0"
-	}
+  "name": "websocket-echo-test",
+  "description": "WebSocket Echo Test",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tomphttp",
+  "bugs": {
+    "url": "https://github.com/tomphttp/websocket-echo/issues",
+    "email": "tomp@sys32.dev"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "basic": "node scripts/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomphttp/websocket-echo.git"
+  },
+  "author": {
+    "name": "TOMP Development",
+    "email": "tomp@sys32.dev",
+    "url": "https://github.com/tomphttp"
+  },
+  "license": "GPL-3.0",
+  "type": "module",
+  "dependencies": {
+    "@fastify/static": "^5.0.0",
+    "commander": "^9.3.0",
+    "fastify": "^3.27.0",
+    "fastify-websocket": "^4.0.0",
+    "node-static": "^0.7.11",
+    "ws": "^8.8.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.4.2",
+    "eslint": "^8.18.0",
+    "prettier": "^2.7.1"
+  }
 }
